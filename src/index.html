@@ -7,7 +7,16 @@
   </head>
   <body>
     <div id="root"></div>
-    <h1>Hola mundo</h1>
+    <h1>LOVESECRET</h1>
+        <p>Ingrese el texto</p>
+        <input type="text" id="ingresartexto">
+        <p>Ingrese el número de código secreto</p>
+        <input type="number" id="codigosecreto">
+        <button type="button" id="botoncifrar" onclick="cifrar()">Ocultar el mensaje</button>
+        <button type="button" id="botondescifrarmensaje" onclick="descifrar()">Descubrir el mensaje</button>
+        <p>El mensaje en clave para su pareja es: / El mensaje que envió tu pareja es:</p>
+        <input type="text" id="mensajecifradoydescifrado">
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
