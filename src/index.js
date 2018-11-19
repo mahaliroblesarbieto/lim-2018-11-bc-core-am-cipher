@@ -9,7 +9,9 @@ function cifrar(){
 newText="";
 //Estamos obteniendo en la constante el elemento que se ingreso en el input "ingresartexto"
   originalText = document.getElementById("ingresartexto");
-//Estamos obteniendo el valor del elemento que se ingreso en el input "ingresartexto"
+/*Estamos obteniendo el valor del elemento que se ingreso en el input
+"ingresartexto" y también en caso que el usuario ingrese el texto en minuscula, internammente
+se convertira en mayuscula*/
   const originalTextValue = originalText.value.toUpperCase();
 //Estamos obteniendo en la constante el elemento que se ingreso en el input "codigosecreto"
   secretCode = document.getElementById("codigosecreto");
@@ -54,7 +56,7 @@ newText="";
 ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
         if (originalTextAscii===32) {
       newText= newText + String.fromCharCode(originalTextAscii);
-        }else{
+    }else{
           /*En caso no sea espacio, obtenemos en una nueva variable el codigo
           ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
           let newTextAscii   = (((originalTextAscii + 65) -  secretCodeValue)% 26)+65;
