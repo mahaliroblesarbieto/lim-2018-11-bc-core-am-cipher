@@ -8,16 +8,24 @@
   <body>
     <div id="root"></div>
     <h1>LOVESECRET</h1>
-        <p>Ingrese el texto</p>
+    <form>
+    <div>
+        <label for="text1">Ingrese el texto:</label>
+    </div>
+    <div>
         <input type="text" id="ingresartexto">
-        <p>Ingrese el número de código secreto (DEL 1 AL 99)</p>
-        <input type="number" id="codigosecreto" min="1" max="99" maxlength="2">
-        
-        <button type="button" id="botoncifrar" onclick="cifrar()">Ocultar el mensaje</button>
-        <button type="button" id="botondescifrarmensaje" onclick="descifrar()">Descubrir el mensaje</button>
+    </div>
+    <div>
+        <label for="text2">Ingrese el número de código secreto (Del 1 al 25)</label>
+    </div>
+    <div>
+        <input type="number" id="codigosecreto" min="1" max="25" maxlength="2">
+    </div>
+        <button type="button" id="botoncifrar" onclick="cipher()">Ocultar el mensaje</button>
+        <button type="button" id="botondescifrarmensaje" onclick="descipher()">Descubrir el mensaje</button>
+    </form>
         <p>El mensaje en clave para su pareja es: / El mensaje que envió tu pareja es:</p>
         <input type="text" id="mensajecifradoydescifrado">
-
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
