@@ -8,8 +8,10 @@ let newText="";
 const buttonCipher=document.getElementById('button-cipher');
 //Creamos una constante en la que se va obtener el elemento con id buttondescipher
 const buttonDescipher=document.getElementById('button-descipher');
-//Creamos una funcion que se tiene que ejecutar al presionar el botón cifrar
- buttonCipher.addEventListener('click', () => {
+//Agregamos una funcion que se tiene que ejecutar al presionar el botón cifrar
+ buttonCipher.addEventListener('click', cipher );
+//Creamos la funcion Cipher
+function cipher(){
 /*Estamos obteniendo el valor del elemento que se ingreso en el input
 "ingresartexto" y también en caso que el usuario ingrese el texto en minuscula, internammente
 se convertira en mayuscula*/
@@ -34,10 +36,12 @@ ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como esp
   }
   //Mostrar el nuevo texto en el input
     return document.getElementById("cipher-and-descipher-text").value = newText;
-});
+};
 
-//Creamos una funcion que se tiene que ejecutar al presionar el botón descifrar
- buttonDescipher.addEventListener('click', () => {
+//Agregamos una funcion que se tiene que ejecutar al presionar el botón descifrar
+ buttonDescipher.addEventListener('click', descipher)
+ //Creamos la funcion buttonDescipher
+ function descipher(){
   /*Estamos obteniendo el valor del elemento que se ingreso en el input
   "ingresartexto" y también en caso que el usuario ingrese el texto en minuscula, internammente
   se convertira en mayuscula*/
@@ -62,4 +66,4 @@ ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como esp
   }
   //Mostrar el nuevo texto en el input
     return document.getElementById("cipher-and-descipher-text").value = newText;
-});
+};
