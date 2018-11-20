@@ -16,7 +16,7 @@ window.cipher = {
                  newText= newText + String.fromCharCode(newTextAscii);
            }
      }
-     return newText;
+     return "El mensaje en código para tu pareja es: " + newText;
  },
 
   decode: function(offset,string){
@@ -36,7 +36,7 @@ window.cipher = {
                   newText= newText + String.fromCharCode(newTextAscii);
             }
       }
-      return newText;
+      return "El mensaje que envió tu pareja es: " + newText;
 
   },
 

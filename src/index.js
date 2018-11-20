@@ -43,4 +43,4 @@ const buttonDescipher=document.getElementById('button-descipher');
 };
 
 //Agregamos al boton final, el evento click para que la pagina se reinicie
-document.getElementById('restart').addEventListener('click',"window.location.href=window.location.href");
+document.getElementById('restart').addEventListener('click',() => {window.location.href=window.location.href});
