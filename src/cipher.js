@@ -1,3 +1,20 @@
 window.cipher = {
-  
+   encode: (secretCodeValue,originalTextValue) => {
+    //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
+      for (let i=0; i<originalTextValue.length; i++){
+        let originalTextAscii = originalTextValue.charCodeAt(i);
+    /*Ponemos una condicional para que cuando se reconozca el espacio cuyo código
+    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
+            if (originalTextAscii===32) {
+          newText= newText + String.fromCharCode(originalTextAscii);
+            }else{
+              /*En caso no sea espacio, obtenemos en una nueva variable el codigo
+              ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
+              let newTextAscii   = (((originalTextAscii - 65) + secretCodeValue)% 26)+65;
+              //Obtener el nuevo texto y vamos concatenando las letras
+                  newText= newText + String.fromCharCode(newTextAscii);
+            }
+      }
+      return newText;
+  }
 };
