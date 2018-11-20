@@ -1,5 +1,6 @@
 window.cipher = {
   encode: function(offset,string){
+    newText=""
    //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
      for (let i=0; i<string.length; i++){
        let originalTextAscii = string.charCodeAt(i);
@@ -19,6 +20,7 @@ window.cipher = {
  },
 
   decode: function(offset,string){
+    newText=""
     //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
       for (let i=0; i<string.length; i++){
         let originalTextAscii = string.charCodeAt(i);

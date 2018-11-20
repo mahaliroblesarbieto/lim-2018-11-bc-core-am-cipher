@@ -2,8 +2,6 @@
 let originalText = document.getElementById("enter-text");
 //Estamos obteniendo en la constante el elemento que se ingreso en el input "codigosecreto"
 let secretCode = document.getElementById("secret-code");
-//Creamos la variable newtex en donde aparecera el texto nuevo y para ello le damos el valor de cadena vacia
-let newText="";
 //Creamos una constante en la que se va obtener el elemento con id buttoncipher
 const buttonCipher=document.getElementById('button-cipher');
 //Creamos una constante en la que se va obtener el elemento con id buttondescipher
@@ -19,13 +17,12 @@ const buttonDescipher=document.getElementById('button-descipher');
    /*Estamos obteniendo el valor del elemento que se ingreso en el input
    "codigosecreto" y tambien lo estamos convirtiendo en variable number*/
    const secretCodeValue = parseInt(secretCode.value);
-   /*La variable newText va tener el valor que se obtenga despues de ejecutar
+   /*Creamos la variable newText, la cual va tener el valor que se obtenga despues de ejecutar
    la funcion encode que se encuentra dentro del objeto window.cipher */
    let newText = cipher.encode(secretCodeValue, originalTextValue);
    //Mostrar el nuevo texto en el input
   return  document.getElementById("cipher-and-descipher-text").value = newText;
  };
-
 
 //Agregamos la funcion discoverMessage que se tiene que ejecutar al presionar el botón descifrar
  buttonDescipher.addEventListener('click', discoverMessage)
@@ -38,9 +35,12 @@ const buttonDescipher=document.getElementById('button-descipher');
   /*Estamos obteniendo el valor del elemento que se ingreso en el input
   "codigosecreto" y tambien lo estamos convirtiendo en variable number*/
     const secretCodeValue = parseInt(secretCode.value);
-    /*La variable newText va tener el valor que se obtenga despues de ejecutar
+    /*Creamos la variable newText, la cual va tener el valor que se obtenga despues de ejecutar
     la funcion encode que se encuentra dentro del objeto window.cipher */
     let newText = cipher.decode(secretCodeValue, originalTextValue);
   //Mostrar el nuevo texto en el input
   return document.getElementById("cipher-and-descipher-text").value = newText;
 };
+
+//Agregamos al boton final, el evento click para que la pagina se reinicie
+document.getElementById('restart').addEventListener('click',"window.location.href=window.location.href");
