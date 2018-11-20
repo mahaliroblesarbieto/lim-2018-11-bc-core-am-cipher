@@ -8,7 +8,9 @@ window.cipher = {
    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
            if (originalTextAscii===32) {
          newText= newText + String.fromCharCode(originalTextAscii);
-           }else{
+       } else if (originalTextAscii===165) {
+         newText= newText + String.fromCharCode(78);
+       }else{
              /*En caso no sea espacio, obtenemos en una nueva variable el codigo
              ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
              let newTextAscii   = (((originalTextAscii - 65) + offset)% 26)+65;
@@ -16,7 +18,7 @@ window.cipher = {
                  newText= newText + String.fromCharCode(newTextAscii);
            }
      }
-     return "El mensaje en código para tu pareja es: " + newText;
+     return newText;
  },
 
   decode: function(offset,string){
@@ -28,6 +30,8 @@ window.cipher = {
     ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
             if (originalTextAscii===32) {
           newText= newText + String.fromCharCode(originalTextAscii);
+          } else if (originalTextAscii===165) {
+          newText= newText + String.fromCharCode(78);
             }else{
               /*En caso no sea espacio, obtenemos en una nueva variable el codigo
               ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
@@ -36,7 +40,7 @@ window.cipher = {
                   newText= newText + String.fromCharCode(newTextAscii);
             }
       }
-      return "El mensaje que envió tu pareja es: " + newText;
+      return newText;
 
   },
 
