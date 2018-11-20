@@ -7,25 +7,72 @@
   </head>
   <body>
     <div id="root"></div>
+<!--Título de la pagina web -->
+<header>
     <h1>LOVESECRET</h1>
+    <h2>¡Bienvenido(a)!</h2>
+    <h3>Envía mensajes en código o descubre el mensaje de tu pareja</h3>
+</header>
+<!--Creamos un formulario, en donde el usuario va ingresar el texto a cifrar
+o descifrar y también va escoger el número de código secreto -->
+<section>
     <form>
     <div>
-        <label for="text1">Ingrese el texto:</label>
+        <label for="enter-text">Ingrese el texto:</label>
     </div>
     <div>
-        <input type="text" id="ingresartexto">
+        <input type="text" id="enter-text" required>
     </div>
     <div>
-        <label for="text2">Ingrese el número de código secreto (Del 1 al 25)</label>
+        <label for="secret-code">Elija el número de código secreto: </label>
     </div>
     <div>
-        <input type="number" id="codigosecreto" min="1" max="25" maxlength="2">
+        <select id="secret-code" name="secret-code">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">24</option>
+        </select>
     </div>
-        <button type="button" id="botoncifrar" onclick="cipher()">Ocultar el mensaje</button>
-        <button type="button" id="botondescifrarmensaje" onclick="descipher()">Descubrir el mensaje</button>
+  <!--Creamos dos botones para dar dos opciones al usuario, una que es cifrar y otra descifrar -->
+    <div>
+      <p>¿Que acción desea realizar?</p>
+      <button type="button" id="button-cipher">Ocultar el mensaje</button>
+      <button type="button" id="button-descipher">Descubrir el mensaje</button>
+    </div>
     </form>
-        <p>El mensaje en clave para su pareja es: / El mensaje que envió tu pareja es:</p>
-        <input type="text" id="mensajecifradoydescifrado">
+<!--Creamos un input, en donde se mostrará el resultado al cifrar o descifrar -->
+    <div>
+      <input type="text" id="cipher-and-descipher-text">
+    </div>
+</section>
+<!--Creamos un botón para que el usuario pueda volver a escribir el mensaje-->
+<footer>
+     <div>
+       <button type="button" id="restart">Volver a escribir el mensaje</button>
+     </div>
+</footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
