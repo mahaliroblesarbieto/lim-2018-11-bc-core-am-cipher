@@ -9,7 +9,7 @@ window.cipher = {
            if (originalTextAscii===32) {
          newText= newText + String.fromCharCode(originalTextAscii);
        } else if (originalTextAscii===165) {
-         newText= newText + String.fromCharCode(78);
+         newText= newText + "Ó";
        }else{
              /*En caso no sea espacio, obtenemos en una nueva variable el codigo
              ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
@@ -30,8 +30,8 @@ window.cipher = {
     ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
             if (originalTextAscii===32) {
           newText= newText + String.fromCharCode(originalTextAscii);
-          } else if (originalTextAscii===165) {
-          newText= newText + String.fromCharCode(78);
+        } else if (originalTextAscii===224) {
+          newText= newText + "Ñ";
             }else{
               /*En caso no sea espacio, obtenemos en una nueva variable el codigo
               ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
