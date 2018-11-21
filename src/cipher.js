@@ -4,11 +4,12 @@ window.cipher = {
    //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
      for (let i=0; i<string.length; i++){
        let originalTextAscii = string.charCodeAt(i);
+       console.log(originalTextAscii);
    /*Ponemos una condicional para que cuando se reconozca el espacio cuyo código
    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
            if (originalTextAscii===32) {
          newText= newText + String.fromCharCode(originalTextAscii);
-       } else if (originalTextAscii===165) {
+       } else if (originalTextAscii===209) {
          newText= newText + "Ó";
        }else{
              /*En caso no sea espacio, obtenemos en una nueva variable el codigo
@@ -30,7 +31,7 @@ window.cipher = {
     ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
             if (originalTextAscii===32) {
           newText= newText + String.fromCharCode(originalTextAscii);
-        } else if (originalTextAscii===224) {
+        } else if (originalTextAscii===211) {
           newText= newText + "Ñ";
             }else{
               /*En caso no sea espacio, obtenemos en una nueva variable el codigo
