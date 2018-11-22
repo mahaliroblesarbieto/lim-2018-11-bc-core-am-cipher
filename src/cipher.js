@@ -1,10 +1,9 @@
 window.cipher = {
   encode: function(offset,string){
-    newText=""
+    let newText="";
    //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
      for (let i=0; i<string.length; i++){
        let originalTextAscii = string.charCodeAt(i);
-       console.log(originalTextAscii);
    /*Ponemos una condicional para que cuando se reconozca el espacio cuyo código
    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
            if (originalTextAscii===32) {
@@ -23,7 +22,7 @@ window.cipher = {
  },
 
   decode: function(offset,string){
-    newText=""
+    let newText=""
     //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
       for (let i=0; i<string.length; i++){
         let originalTextAscii = string.charCodeAt(i);

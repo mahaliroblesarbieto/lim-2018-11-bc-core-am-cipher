@@ -22,7 +22,7 @@ const buttonDescipher=document.getElementById('button-descipher');
    let newText = cipher.encode(secretCodeValue, originalTextValue);
    //Mostrar el nuevo texto en el input
   return  document.getElementById("cipher-and-descipher-text").value = newText;
- };
+ }
 
 //Agregamos la funcion discoverMessage que se tiene que ejecutar al presionar el botón descifrar
  buttonDescipher.addEventListener('click', discoverMessage)
@@ -40,7 +40,9 @@ const buttonDescipher=document.getElementById('button-descipher');
     let newText = cipher.decode(secretCodeValue, originalTextValue);
   //Mostrar el nuevo texto en el input
   return document.getElementById("cipher-and-descipher-text").value = newText;
-};
+}
 
 //Agregamos al boton final, el evento click para que la pagina se reinicie
-document.getElementById('restart').addEventListener('click',() => {window.location.href=window.location.href});
+document.getElementById('restart').addEventListener('click',() => {
+  location.reload();
+});
