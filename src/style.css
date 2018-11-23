@@ -22,21 +22,18 @@ h2{font-size: 150%;
    margin-top: 0px;
    padding-top: 0px;
 }
-/*Vamos a darle estilo al input con id enter-text */
+/*Se le esta dando estilo a los botones cifrar y descifrar */
 
-
-
-button{background-color: #66CDAA; padding: 10px; margin-top: 30px;
+button{background-color: #66CDAA; padding: 10px; margin-top: 10px;
     width: 200px; border: 2px solid white; font-family: sans-serif; color: white; font-weight: 300;
 }
-
-
+/*Se le esta dando estilo al botón restart */
 #restart{background-color: #DAA520; padding: 10px; margin-top: 30px;
     width: 200px; border: 2px solid white; font-family: sans-serif; color: white; font-weight: 300;
 }
 
 
-
+/*Vamos a darle estilo al input */
 input {
   display: block;
   font-size: 14px;
@@ -52,7 +49,7 @@ input {
   width:400px;
   text-align:center;
   font-style: italic;
-  margin-top: 30px;
+  margin-top: 20px;
   padding-top: 10px;
   margin-bottom: 30px;
   padding-bottom: 10px;
@@ -76,4 +73,21 @@ input:focus {
    padding-top: 10px;
    margin-bottom: 30px;
    padding-bottom: 10px;
+}
+
+section{
+  font-size: 100%;
+     font-weight: bolder;
+     margin-top: 30px;
+     padding-top: 30px;
+}
+
+#secret-code{
+
+    background-color:#483D8B;
+    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+  height: 34px;
+  width: 300px;
+  font-size: 80%;
+    font-weight: bolder;
 }
