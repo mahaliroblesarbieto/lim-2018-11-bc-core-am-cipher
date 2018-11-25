@@ -8,10 +8,11 @@ font-family: sans-serif;
 -webkit-background-size: cover;
 background-repeat:no-repeat;
 background-position:center;
-
+background-size: auto,auto;
 background-size:cover;
 background-size: auto auto;
-
+width: 100%;
+  height: auto;
 }
 @media screen and (min-width: 400px) {
     body {
