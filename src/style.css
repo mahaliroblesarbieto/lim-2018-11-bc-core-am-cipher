@@ -1,8 +1,10 @@
 /*Vamos a poner una imagen de fondo y la vamos a centrar, también vamos
 a darle propiedades a todas las letras que esten dentro de body */
-body{
 
-color: white;
+@media screen and (min-width: 400px) {
+    body {
+        background-image:url('fondo.jpg');
+		color: white;
 text-align: center;
 font-family: sans-serif;
 -webkit-background-size: cover;
@@ -13,16 +15,23 @@ background-size:cover;
 background-size: auto auto;
 width: 100%;
   height: auto;
-}
-@media screen and (min-width: 400px) {
-    body {
-        background-image:url('fondo.jpg');
     }
 }
 
 @media screen and (max-width: 399px) {
     body {
          background-image:url('fondo.jpg');
+		 color: white;
+text-align: center;
+font-family: sans-serif;
+-webkit-background-size: cover;
+background-repeat:no-repeat;
+background-position:center;
+background-size: auto,auto;
+background-size:cover;
+background-size: auto auto;
+width: 100%;
+  height: auto;
     }
 }
 
