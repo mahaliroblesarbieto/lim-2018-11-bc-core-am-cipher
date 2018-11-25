@@ -1,4 +1,4 @@
-# LOVESECRETv2
+# LOVESECRET
 
 ¿Quiénes son los principales usuarios de producto?
 Los principales usuarios de este producto son las parejas.

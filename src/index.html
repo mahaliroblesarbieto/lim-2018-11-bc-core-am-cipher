@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width-device-width, user-scalable-no, initial-scale-1.0, maximum-scale-1.0, minimum-scale-1.0">
   </head>
   <body>
-    <div id="root"></div>
+<div class="contenedor">
+  <div id="root"></div>
 <!--Título de la pagina web -->
 <header>
     <h1>LOVESECRET</h1>
@@ -14,7 +16,7 @@
 </header>
 <!--Creamos un formulario, en donde el usuario va ingresar el texto a cifrar
 o descifrar y también va escoger el número de código secreto -->
-<section>
+<section class="main">
     <form>
     <div>
         <input  type="text" id="enter-text" placeholder="INGRESE EL MENSAJE" required>
@@ -68,6 +70,7 @@ o descifrar y también va escoger el número de código secreto -->
        <button type="button" id="restart">Volver a escribir el mensaje</button>
      </div>
 </footer>
+</div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

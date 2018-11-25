@@ -1,5 +1,5 @@
 /*Vamos a poner una imagen de fondo y la vamos a centrar, también vamos
-a darlepropiedades a todas las letras que esten dentro de body */
+a darle propiedades a todas las letras que esten dentro de body */
 body{
   background-image: url("https://www.proe.blog/wp-content/uploads/2018/10/shutterstock_266341625.jpg"); no-repeat center center fixed;
 -webkit-background-size: cover;
@@ -9,6 +9,8 @@ background-size: cover;
   color: white;
   text-align: center;
 	font-family: sans-serif;
+  width: 100%;
+  height: auto;
 }
 /*Vamos a darle estilo al texto que se encuentra en h1 */
 h1{font-size: 600%;
@@ -32,7 +34,6 @@ button{background-color: #66CDAA; padding: 10px; margin-top: 10px;
     width: 200px; border: 2px solid white; font-family: sans-serif; color: white; font-weight: 300;
 }
 
-
 /*Vamos a darle estilo al input */
 input {
   display: block;
@@ -54,8 +55,6 @@ input {
   margin-bottom: 30px;
   padding-bottom: 10px;
 }
-
-
 
 input:hover,
 input:focus {
@@ -90,4 +89,34 @@ section{
   width: 300px;
   font-size: 80%;
     font-weight: bolder;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1000px
+}
+
+.main {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer{
+  box-sizing: border-box;
+}
+
+header{
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 400px) {
+  .contenedor{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  body {
+    background-image: url("https://www.proe.blog/wp-content/uploads/2018/10/shutterstock_266341625.jpg");
+  }
 }
