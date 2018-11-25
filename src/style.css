@@ -16,13 +16,13 @@ width: 100%;
 }
 @media screen and (min-width: 400px) {
     body {
-        background-image:url('fondog.jpg');
+        background-image:url('fondo.jpg');
     }
 }
 
 @media screen and (max-width: 399px) {
     body {
-         background-image:url('fondop.jpg');
+         background-image:url('fondo.jpg');
     }
 }
 
