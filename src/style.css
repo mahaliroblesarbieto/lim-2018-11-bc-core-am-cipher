@@ -1,7 +1,7 @@
 /*Vamos a poner una imagen de fondo y la vamos a centrar, también vamos
 a darle propiedades a todas las letras que esten dentro de body */
 body{
-background-image:url('fondo.jpg');
+
 color: white;
 text-align: center;
 font-family: sans-serif;
@@ -13,6 +13,18 @@ background-position:center;
 background-size:cover;
 
 }
+@media screen and (min-width: 400px) {
+    body {
+        background-image:url('fondog.jpg');
+    }
+}
+
+@media screen and (max-width: 399px) {
+    body {
+         background-image:url('fondop.jpg');
+    }
+}
+
 /*Vamos a darle estilo al texto que se encuentra en h1 */
 h1{font-size: 600%;
   font-weight: bolder;
