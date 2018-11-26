@@ -11,3 +11,5 @@ Los principales usuarios de este producto son las parejas; el objetivo de estos 
 ### ¿Cómo el producto soluciona los problemas o necesidades del usuario?
 
 El producto soluciona la necesidad de privacidad de las parejas y sobretodo a que en caso un tercero llegara a acceder a sus mensajes no los entendería.
+
+Acceder a la página a través del siguiente link: file:///C:/Users/LABORATORIA%20D0082/Documents/MAHALI/lim-2018-11-bc-core-am-cipher/src/index.html
