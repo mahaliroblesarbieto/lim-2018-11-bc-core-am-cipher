@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  
-<meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-<center>
-  <div id="root"></div>
-<!--Título de la pagina web -->
-<header>
-    <h1>LOVESECRET</h1>
-    <h2>Envía mensajes en código o descubre el mensaje de tu pareja</h2>
-</header>
-<!--Creamos un formulario, en donde el usuario va ingresar el texto a cifrar
-o descifrar y también va escoger el número de código secreto -->
-<section class="main">
-    <form>
-    <div>
-        <input  type="text" id="enter-text" placeholder="INGRESE EL MENSAJE" required>
-    </div>
-    <div>
-        <select id="secret-code" name="secret-code">
-          <option>SELECCIONE CÓDIGO SECRETO</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-          <option value="16">16</option>
-          <option value="17">17</option>
-          <option value="18">18</option>
-          <option value="19">19</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
-        </select>
-    </div>
-  <!--Creamos dos botones para dar dos opciones al usuario, una que es cifrar y otra descifrar -->
-    <div>
-      <p>¿Que acción desea realizar?</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+		<link rel="shortcut icon" type="image/png" href="imagenes/favicon.jpg"/>
+		<title>LoveSecret</title>
+    </head>
+    <body>
+      <div class="container">
+        <div class="header" style="text-align: center;">
+            <h1>LOVESECRET</h1>
+            <h2>Envía mensajes en código o descubre el mensaje de tu pareja</h2>
+        </div>
+        <!-- BLOQUE 1 -->
+        <div class="row">
+            <!-- fila 1-->
+            <div class="col-12 col-s-12" style="text-align: center;">
+                <input  type="text" id="enter-text" placeholder="INGRESE EL MENSAJE">
+            </div>
+        </div>
+        <!-- BLOQUE 2 -->
+        <div class="row">
+            <!-- fila 1-->
+            <div class="col-12 col-s-12 " style="text-align: center;">
+                <select id="secret-code" name="secret-code">
+                  <option>SELECCIONE CÓDIGO SECRETO</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                </select>
+            </div>
+        </div>
+        <!-- BLOQUE 3 -->
+        <div class="row">
+            <!-- columna 1-->
+            <div class="col-3 col-s-3 no" ></div>
+            <!-- columna 2-->
+            <div class="col-3 col-s-3 no " style="text-align: center;">
+                <button type="button" id="button-cipher">Ocultar el mensaje</button>
+            </div>
+            <!-- columna 3-->
+            <div class="col-3 col-s-3 no" style="text-align: center; ">
+                <button type="button" id="button-descipher">Descubrir el mensaje</button>
+            </div>
+            <!-- columna 4-->
+            <div class="col-3 col-s-3 no"></div>
+        </div>
 
-      <button type="button" id="button-cipher">Ocultar el mensaje</button>
-      <button type="button" id="button-descipher">Descubrir el mensaje</button>
-    </div>
-    </form>
-<!--Creamos un input, en donde se mostrará el resultado al cifrar o descifrar -->
-    <div>
-      <input type="text" id="cipher-and-descipher-text" placeholder="MIRA EL MENSAJE AQUI">
-    </div>
-</section>
-<!--Creamos un botón para que el usuario pueda volver a escribir el mensaje-->
-<footer>
-     <div>
-       <button type="button" id="restart">Volver a escribir el mensaje</button>
-     </div>
-</footer>
-
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-	</center>
-  </body>
+        <!-- BLOQUE 4 -->
+        <div class="row">
+            <!-- fila 1-->
+            <div class="col-12 col-s-12" style="text-align: center;">
+                <input type="text" id="cipher-and-descipher-text" placeholder="MIRA EL MENSAJE AQUÍ">
+            </div>
+            <br>
+            <!-- fila 2-->
+            <div class="col-12 col-s-12" style="text-align: center;">
+                <button type="button" id="restart">Volver a escribir el mensaje</button>
+            </div>
+        </div>
+      </div>
+		<script src="cipher.js"></script>
+		<script src="index.js"></script>
+    </body>
 </html>
