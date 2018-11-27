@@ -1,99 +1,34 @@
+/*Le damos estilo al encabezado */
 .header {
-    color:white;
+    color:#663399;
     padding: 10px;
     text-align: center;
     font-family: "Lucida Sans", sans-serif;
 }
-* {
-    box-sizing: border-box;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
-
+/*Le damos estilo a la etiqueta h1 */
 h1{font-size: 300%;
    font-weight: bolder;
    margin-top: 1px;
    margin-bottom: 1px;
    padding-bottom: 1px;
 }
-
+/*Le damos estilo a la etiqueta h2 */
 h2{font-size: 100%;
    font-weight: bolder;
    margin-top: 0px;
    padding-top: 0px;
 }
-
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+/*Le damos estilo al body */
+body{
+  background-color: #483D8B;
+  background-image:url('imagenes/fondop2.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Lucida Sans", sans-serif;
 }
-
-body {
-    background-image:url('imagenes/fondocel.jpeg');
-    -webkit-background-size: cover;
-    color: white;
-    text-align: center;
-}
-
-@media only screen and (min-width: 600px) {
-  body {
-background-image:url('imagenes/fondopantalla.jpg');
-background-color: black;
-background-position: center;
-background-repeat: no-repeat;
-background-size: 80% 100%;
-color: white;
-text-align: center;
-  }
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-}
-@media only screen and (min-width: 768px) {
-  body {
-background-image:url('imagenes/fondopantalla.jpg');
-background-position: center;
-background-size: 80% 100%;
-color: white;
-text-align: center;
-
-  }
-
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+/*Nos aseguramos que el relleno y el borde se incluyan en el ancho y la altura totales de los elementos en todos los div de la pagina */
+* {
+    box-sizing: border-box;
 }
 
 /*Vamos a darle estilo al input */
@@ -126,9 +61,8 @@ input:focus {
     text-align:center;
     font-style: italic;
 }
-
+/*Le damos estilo al select en donde el usuario escoge el código secreto*/
 #secret-code{
-
     background-color:#483D8B;
     background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
     height: 34px;
@@ -136,28 +70,135 @@ input:focus {
     font-size: 80%;
     font-weight: bolder;
     margin: 10px auto;
-    color: white;
+    color: #663399;
 }
+/*Le damos estilo a los botones ocultar mensaje y descubrir mensaje*/
 button{
-    background-color: red;
+    background-color: #663399;
     padding: 10px;
     width: 80%;
-    border: 2px solid white;
+    border: 2px #663399;
     font-family: sans-serif;
     color: white;
     border-radius: 5px;
 }
-
+/*Le damos estilo al botón volver a ingresar mensaje*/
 #restart{
-    background-color: red;
+    background-color: #663399;
     padding: 10px;
-    width: 200px;
-    border: 2px solid white;
+    width: 60%;
+    border: 2px #663399;
     font-family: sans-serif;
     color: white;
     font-weight: 300;
     border-radius: 5px;
 }
-.container{
-  height: device-height;
+/*Todas estas columnas deben estar flotando hacia la izquierda y tener un relleno de 15px */
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/*Se coloca un estilo para que borre el flujo de las columnas dentro de la fila */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Para los teléfonos celulares*/
+
+[class*="col-"] {
+    width: 100%;
+  }
+
+/*Para las tablets*/
+@media only screen and (min-width: 600px) {
+  #restart{
+      width: 30%;
+  }
+  .header {
+      padding: 50px;
+      margin-top: 50px;
+  }
+  button{
+
+      width: 90%;
+  }
+  body {
+background-image:url('imagenes/fondop2.jpeg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: 100% 175%;
+color: white;
+text-align: center;
+  }
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+/*Para el escritorio */
+@media only screen and (min-width: 768px) {
+  button{
+
+      width: 100%;
+  }
+  h1{font-size: 300%;
+     font-weight: bolder;
+     margin-top: 1px;
+     margin-bottom: 1px;
+     padding-bottom: 1px;
+  }
+  /*Le damos estilo a la etiqueta h2 */
+  h2{font-size: 150%;
+     font-weight: bolder;
+     margin-top: 0px;
+     padding-top: 0px;
+  }
+
+
+  #restart{
+      background-color: #663399;
+      padding: 10px;
+      width: 20%;
+      border: 2px #663399;
+      font-family: sans-serif;
+      color: white;
+      font-weight: 300;
+      border-radius: 5px;
+  }
+
+  body {
+background-image:url('imagenes/fondop2.jpeg');
+background-position: center;
+background-size: 100% 200%;
+color: white;
+text-align: center;
+
+  }
+
+  .header {
+      padding: 50px;
+      margin-top: 50px;
+  }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 }
