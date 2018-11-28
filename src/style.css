@@ -43,7 +43,7 @@ textarea {
     opacity: 0.5;
     /******/
     border: solid black;
-    width:70%;
+    width:80%;
     text-align:center;
     font-style: italic;
 }
@@ -57,7 +57,7 @@ textarea:focus {
     box-shadow: 0px 1px 0px rgba(255,255,255,.25),inset 0px 3px 6px rgba(0,0,0,.25);
     /*******/
     border: solid black;
-    width:80%;
+    width:90%;
     text-align:center;
     font-style: italic;
 }
@@ -75,7 +75,7 @@ textarea:focus {
 /*Le damos estilo a los botones ocultar mensaje y descubrir mensaje*/
 button{
     background-color: #663399;
-    padding: 10px;
+    padding: 15px;
     width: 80%;
     border: 2px #663399;
     font-family: sans-serif;
@@ -85,7 +85,7 @@ button{
 /*Le damos estilo al botón volver a ingresar mensaje*/
 #restart{
     background-color: #663399;
-    padding: 10px;
+    padding: 15px;
     width: 60%;
     border: 2px #663399;
     font-family: sans-serif;

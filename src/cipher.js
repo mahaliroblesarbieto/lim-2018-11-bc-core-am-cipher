@@ -1,9 +1,11 @@
 window.cipher = {
   encode: function(offset,string){
     let newText="";
+
    //Creamos un bucle para obtener el valor ASCII de cada letra ingresada en el texto
      for (let i=0; i<string.length; i++){
        let originalTextAscii = string.charCodeAt(i);
+
    /*Ponemos una condicional para que cuando se reconozca el espacio cuyo código
    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
            if (originalTextAscii===32) {
@@ -31,7 +33,7 @@ window.cipher = {
        } else if (originalTextAscii===218) {
          newText= newText + "Ú";
        } else if (originalTextAscii===10) {
-          newText= newText + String.fromCharCode(32);
+          newText= newText + " ";
        } else if (originalTextAscii===161) {
           newText= newText + "¡";
         } else if (originalTextAscii===33) {
@@ -54,6 +56,8 @@ window.cipher = {
                  newText= newText + String.fromCharCode(newTextAscii);
            }
      }
+
+
      return newText;
  },
 
@@ -89,7 +93,7 @@ window.cipher = {
         } else if (originalTextAscii===218) {
           newText= newText + "Ú";
         } else if (originalTextAscii===10) {
-           newText= newText + String.fromCharCode(32);
+           newText= newText + " ";
         } else if (originalTextAscii===161) {
            newText= newText + "¡";
         } else if (originalTextAscii===33) {
