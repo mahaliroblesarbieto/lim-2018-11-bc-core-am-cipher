@@ -32,7 +32,7 @@ body{
 }
 
 /*Vamos a darle estilo al input */
-input {
+textarea {
     display: block;
     font-size: 14px;
     margin: auto auto;
@@ -48,8 +48,8 @@ input {
     font-style: italic;
 }
 
-input:hover,
-input:focus {
+textarea:hover,
+textarea:focus {
     opacity: .7;
     color:#000;
     font-weight: 600;

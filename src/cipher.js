@@ -9,7 +9,43 @@ window.cipher = {
            if (originalTextAscii===32) {
          newText= newText + String.fromCharCode(originalTextAscii);
        } else if (originalTextAscii===209) {
+         newText= newText + "Ñ";
+       } else if (originalTextAscii===59) {
+         newText= newText + ";";
+       } else if (originalTextAscii===44) {
+         newText= newText + ",";
+       } else if (originalTextAscii===46) {
+         newText= newText + ".";
+       } else if (originalTextAscii===191) {
+         newText= newText + "¿";
+       } else if (originalTextAscii===63) {
+         newText= newText + "?";
+       } else if (originalTextAscii===193) {
+         newText= newText + "Á";
+       } else if (originalTextAscii===201) {
+         newText= newText + "É";
+       } else if (originalTextAscii===205) {
+         newText= newText + "Í";
+       } else if (originalTextAscii===211) {
          newText= newText + "Ó";
+       } else if (originalTextAscii===218) {
+         newText= newText + "Ú";
+       } else if (originalTextAscii===10) {
+          newText= newText + String.fromCharCode(32);
+       } else if (originalTextAscii===161) {
+          newText= newText + "¡";
+        } else if (originalTextAscii===33) {
+           newText= newText + "!";
+        } else if (originalTextAscii===40) {
+           newText= newText + "(";
+        } else if (originalTextAscii===41) {
+           newText= newText + ")";
+        } else if (originalTextAscii===34) {
+           newText= newText + "\"";
+        } else if (originalTextAscii===58) {
+           newText= newText + ":";
+        } else if (originalTextAscii===42) {
+           newText= newText + "*";
        }else{
              /*En caso no sea espacio, obtenemos en una nueva variable el codigo
              ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
@@ -30,9 +66,45 @@ window.cipher = {
     ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
             if (originalTextAscii===32) {
           newText= newText + String.fromCharCode(originalTextAscii);
-        } else if (originalTextAscii===211) {
+        } else if (originalTextAscii===209) {
           newText= newText + "Ñ";
-            }else{
+        } else if (originalTextAscii===59) {
+          newText= newText + ";";
+        } else if (originalTextAscii===44) {
+          newText= newText + ",";
+        } else if (originalTextAscii===46) {
+          newText= newText + ".";
+        } else if (originalTextAscii===191) {
+          newText= newText + "¿";
+        } else if (originalTextAscii===63) {
+          newText= newText + "?";
+        } else if (originalTextAscii===193) {
+          newText= newText + "Á";
+        } else if (originalTextAscii===201) {
+          newText= newText + "É";
+        } else if (originalTextAscii===205) {
+          newText= newText + "Í";
+        } else if (originalTextAscii===211) {
+          newText= newText + "Ó";
+        } else if (originalTextAscii===218) {
+          newText= newText + "Ú";
+        } else if (originalTextAscii===10) {
+           newText= newText + String.fromCharCode(32);
+        } else if (originalTextAscii===161) {
+           newText= newText + "¡";
+        } else if (originalTextAscii===33) {
+            newText= newText + "!";
+        } else if (originalTextAscii===40) {
+             newText= newText + "(";
+        } else if (originalTextAscii===41) {
+             newText= newText + ")";
+        } else if (originalTextAscii===34) {
+             newText= newText + "\"";
+        } else if (originalTextAscii===58) {
+             newText= newText + ":";
+        } else if (originalTextAscii===42) {
+             newText= newText + "*";
+          }else{
               /*En caso no sea espacio, obtenemos en una nueva variable el codigo
               ASCII de la nueva letra que se obtiene al realizar el desplazamiento*/
               let newTextAscii   = (((originalTextAscii + 65) - offset)% 26)+65;
