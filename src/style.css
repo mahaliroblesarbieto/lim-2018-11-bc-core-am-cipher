@@ -6,17 +6,18 @@
     font-family: "Lucida Sans", sans-serif;
 }
 /*Le damos estilo a la etiqueta h1 */
-h1{font-size: 300%;
-   font-weight: bolder;
+h1{font-size: 370%;
    margin-top: 1px;
    margin-bottom: 1px;
    padding-bottom: 1px;
+   font-family: 'Monoton', cursive;
 }
 /*Le damos estilo a la etiqueta h2 */
-h2{font-size: 100%;
+h2{font-size: 125%;
    font-weight: bolder;
    margin-top: 0px;
    padding-top: 0px;
+   font-family: 'Noto Sans TC', sans-serif;
 }
 /*Le damos estilo al body */
 body{
@@ -24,7 +25,7 @@ body{
   background-image:url('imagenes/fondop2.jpeg');
   background-position: center;
   background-repeat: no-repeat;
-  font-family: "Lucida Sans", sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 /*Nos aseguramos que el relleno y el borde se incluyan en el ancho y la altura totales de los elementos en todos los div de la pagina */
 * {
@@ -78,6 +79,7 @@ textarea:focus {
     color: #663399;
     border: 2px solid #663399;
     border-radius: 5px;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 /*Le damos estilo a los botones ocultar mensaje y descubrir mensaje*/
 button{
@@ -85,7 +87,7 @@ button{
     padding: 15px;
     width: 80%;
     border: 2px #663399;
-    font-family: sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     color: white;
     border-radius: 5px;
 }
@@ -95,7 +97,7 @@ button{
     padding: 15px;
     width: 74%;
     border: 2px #663399;
-    font-family: sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
     color: white;
     font-weight: 300;
     border-radius: 5px;
@@ -178,7 +180,6 @@ text-align: center;
       padding: 10px;
       width: 30%;
       border: 2px #663399;
-      font-family: sans-serif;
       color: white;
       font-weight: 300;
       border-radius: 5px;
