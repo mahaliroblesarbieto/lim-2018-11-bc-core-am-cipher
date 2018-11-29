@@ -33,7 +33,7 @@ window.cipher = {
        } else if (originalTextAscii===218) {
          newText= newText + "Ú";
        } else if (originalTextAscii===10) {
-          newText= newText + " ";
+          newText= newText + "\n";
        } else if (originalTextAscii===161) {
           newText= newText + "¡";
         } else if (originalTextAscii===33) {
@@ -93,7 +93,7 @@ window.cipher = {
         } else if (originalTextAscii===218) {
           newText= newText + "Ú";
         } else if (originalTextAscii===10) {
-           newText= newText + " ";
+           newText= newText + "\n";
         } else if (originalTextAscii===161) {
            newText= newText + "¡";
         } else if (originalTextAscii===33) {

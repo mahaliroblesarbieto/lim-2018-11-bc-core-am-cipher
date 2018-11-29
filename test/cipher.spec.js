@@ -91,7 +91,7 @@ describe('cipher', () => {
     });
 
     it('debería retornar " " para botón enter con offset 33' , () => {
-      assert.equal(cipher.encode(33," ")," ");
+      assert.equal(cipher.encode(33,"\n"),"\n");
     });
 
   });
@@ -191,7 +191,7 @@ describe('cipher', () => {
     });
 
     it('debería retornar " " para botón enter con offset 33' , () => {
-      assert.equal(cipher.encode(33," ")," ");
+      assert.equal(cipher.encode(33,"\n"),"\n");
     });
   });
 
