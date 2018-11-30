@@ -21,6 +21,7 @@ Como tercer paso se realizó el archivo CSS y la parte de Responsive Web Design.
  -*Se colocó dos textarea uno en donde el usuario pueda ingresar el mensaje y otro en el que se pueda ver el mensaje ya sea oculto o descifrado, se prefirió text-area en lugar de input para de esa manera dar la oportunidad al usuario de ingresar más líneas de texto.*
  -*Se decidió colocar un select, para que el usuario escoja la clave secreta, se le da la opción de escoger de los números 1 a 25, ya que si se ponía como opción el número 26, no se ocultaba el mensaje, debido a que la fórmula que se utiliza para cifrar y descifrar maneja residuo de 26.*
  -*Se colocaron tres botones, los dos primerospermiten al usuario realizar la acción de ocultar y descubrir el mensaje y el último botón permite reiniciar la página en caso el usuario desee empezar de nuevo.*
+ -*El programatambién permite ingresar al usuario la letraÑ, signos de puntuación, exclamación, interrogación, además de letras con tilde.*
  -*El programa se adapta a los siguientes dispositivos:*
  *-Fondo de escritorio*
  *-Tablets*
