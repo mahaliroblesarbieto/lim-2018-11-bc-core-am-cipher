@@ -7,7 +7,8 @@ window.cipher = {
        let originalTextAscii = string.charCodeAt(i);
 
    /*Ponemos una condicional para que cuando se reconozca el espacio cuyo código
-   ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
+   ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio, de lamisma manera
+   con Ñ, signos de interrogación, signos de exclamación, puntuación y letras con tilde */
            if (originalTextAscii===32) {
          newText= newText + String.fromCharCode(originalTextAscii);
        } else if (originalTextAscii===209) {
@@ -67,7 +68,8 @@ window.cipher = {
       for (let i=0; i<string.length; i++){
         let originalTextAscii = string.charCodeAt(i);
     /*Ponemos una condicional para que cuando se reconozca el espacio cuyo código
-    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio*/
+    ASCII es 32, éste sea transformado nuevamente a espacio y se concatene como espacio,
+    de lamisma manera con Ñ, signos de interrogación, signos de exclamación, puntuación y letras con tilde */
             if (originalTextAscii===32) {
           newText= newText + String.fromCharCode(originalTextAscii);
         } else if (originalTextAscii===209) {

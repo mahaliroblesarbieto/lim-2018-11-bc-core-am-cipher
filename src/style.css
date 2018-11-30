@@ -3,7 +3,7 @@
     color: white;
     padding: 10px;
     text-align: center;
-    font-family: "Lucida Sans", sans-serif;
+    font-weight: bolder;
 }
 /*Le damos estilo a la etiqueta h1 */
 h1{font-size: 3.3em;
@@ -15,11 +15,9 @@ h1{font-size: 3.3em;
 }
 /*Le damos estilo a la etiqueta h2 */
 h2{font-size: 1.3em;
-   font-weight: bolder;
    margin-top: 0px;
    padding-top: 0px;
    font-family: 'Indie Flower', cursive;
-   color:white;
 }
 /*Le damos estilo al body */
 body{
@@ -140,7 +138,6 @@ button{
       margin-top: 50px;
   }
   button{
-
       width: 100%;
       padding: 13px;
   }
