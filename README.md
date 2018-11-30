@@ -24,10 +24,15 @@ Como tercer paso se realizó el archivo CSS y la parte de Responsive Web Design.
  8. *El programatambién permite ingresar al usuario la letraÑ, signos de puntuación, exclamación, interrogación, además de letras con tilde.*
  9. *El programa se adapta a los siguientes dispositivos:*
  * *Fondo de escritorio*
+
  ![Sin titulo](fondoparaescritorio.png)
+
  * *Tablets*
+
  ![Sin titulo](fondoparatablet.jpg)
+ 
  * *Celular*
+
  ![Sin titulo](fondoparacelu.jpg)
 
 ## ***¿Quienes son los usuarios y cuál es su relación con el producto?***
