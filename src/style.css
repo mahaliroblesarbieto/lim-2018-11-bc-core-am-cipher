@@ -1,18 +1,28 @@
 /*Le damos estilo al encabezado */
-.header {
+header {
     color: white;
     padding: 10px;
-    text-align: center;
     font-weight: bolder;
+    text-shadow: 1.5px 2.5px black;
+  }
+
+#i2{
+    font-size:1em;
 }
-/*Le damos estilo a la etiqueta h1 */
-h1{font-size: 3.3em;
-   margin-top: 1px;
-   margin-bottom: 1px;
-   padding-bottom: 1px;
-   font-weight: bolder;
-   font-family: 'Kaushan Script', cursive;
+#i1{
+  font-size: 1em;
 }
+
+h1{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size:3.3em;
+    font-weight: bolder;
+    margin: 0;
+    padding:0;
+
+}
+
 /*Le damos estilo a la etiqueta h2 */
 h2{font-size: 1.3em;
    margin-top: 0px;
@@ -73,17 +83,24 @@ textarea:focus {
 }
 /*Le damos estilo al select en donde el usuario escoge el código secreto*/
 #secret-code{
-    background-color:#483D8B;
     background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
     height: 34px;
     width: 300px;
     font-size: 1em;
     font-weight: bolder;
     margin: 10px auto;
-    color: black;
+    color: white;
     border: 2px solid #663399;
     border-radius: 5px;
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 3px black;
+}
+
+option{
+  color: white;
+  text-shadow: 2px 3px black;
+  background-color:#663399;
+  text-align: center;
 }
 /*Le damos estilo a los botones ocultar mensaje y descubrir mensaje*/
 button{
@@ -96,20 +113,15 @@ button{
     border-radius: 5px;
     font-size: 1em;
     font-weight: bolder;
+    text-shadow: 1.5px 2.5px black;
+    -moz-box-shadow: 4px 4px 0 		#4B0082;
+-webkit-box-shadow: 4px 4px 0 		#4B0082;
 }
 /*Le damos estilo al botón volver a ingresar mensaje*/
 #restart{
-    background-color: #663399;
-    padding: 15px;
     width: 74%;
-    border: 2px #663399;
-    font-family: 'Indie Flower', cursive;
-    color: white;
-    font-weight: 300;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bolder;
-}
+  }
+
 /*Todas estas columnas deben estar flotando hacia la izquierda y tener un relleno de 15px */
 [class*="col-"] {
     float: left;
@@ -125,17 +137,12 @@ button{
 
 [class*="col-"] {
     width: 100%;
-  }
-
+}
 /*Para las tablets*/
 @media only screen and (min-width: 600px) {
   #restart{
       width: 40%;
       padding: 10px;
-  }
-  .header {
-      padding: 50px;
-      margin-top: 50px;
   }
   button{
       width: 100%;
@@ -162,7 +169,7 @@ text-align: center;
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
 }
-/*Para el escritorio */
+/*Para el escritorio*/
 @media only screen and (min-width: 768px) {
   button{
 
@@ -174,13 +181,12 @@ text-align: center;
      margin-bottom: 1px;
      padding-bottom: 1px;
   }
-  /*Le damos estilo a la etiqueta h2 */
+  /*Le damos estilo a la etiqueta h2*/
   h2{font-size: 150%;
      font-weight: bolder;
      margin-top: 0px;
      padding-top: 0px;
   }
-
 
   #restart{
       background-color: #663399;
@@ -199,11 +205,6 @@ background-size: 100% 200%;
 color: white;
 text-align: center;
 
-  }
-
-  .header {
-      padding: 50px;
-      margin-top: 50px;
   }
 
     .col-1 {width: 8.33%;}
