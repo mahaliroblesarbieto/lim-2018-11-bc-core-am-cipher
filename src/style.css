@@ -1,3 +1,5 @@
+/*Agregamos estilo de letra en CSS*/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Kaushan+Script');
 /*Le damos estilo al encabezado */
 header {
     color: white;
@@ -6,10 +8,11 @@ header {
     text-shadow: 1.5px 2.5px black;
     text-align: center;
   }
-
+/*Centramos los elementos dentro de la etiqueta section*/
   section{
     text-align: center;
   }
+/*Centramos los elementos dentro de la etiqueta footer*/
   footer{
     text-align: center;
   }
