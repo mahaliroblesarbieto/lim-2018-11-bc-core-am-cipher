@@ -5,14 +5,14 @@ header {
     font-weight: bolder;
     text-shadow: 1.5px 2.5px black;
   }
-
+/*Le damos estilo a los iconos que estan dentro de header, en este caso solo se esta aumentando el tamaño*/
 #i2{
     font-size:1em;
 }
 #i1{
   font-size: 1em;
 }
-
+/*Le damos estilo a la etiqueta h1*/
 h1{
     font-family: 'Kaushan Script', cursive;
     text-align: center;
@@ -20,9 +20,7 @@ h1{
     font-weight: bolder;
     margin: 0;
     padding:0;
-
 }
-
 /*Le damos estilo a la etiqueta h2 */
 h2{font-size: 1.3em;
    margin-top: 0px;
@@ -42,7 +40,7 @@ body{
     box-sizing: border-box;
 }
 
-/*Vamos a darle estilo al input */
+/*Vamos a darle estilo al textarea*/
 textarea {
     display: block;
     font-size: 1.3em;
@@ -79,7 +77,6 @@ textarea:focus {
     line-height: 20px;
      font-family: 'Indie Flower', cursive;
      font-size: 1.3em;
-
 }
 /*Le damos estilo al select en donde el usuario escoge el código secreto*/
 #secret-code{
@@ -95,7 +92,7 @@ textarea:focus {
     font-family: 'Indie Flower', cursive;
     text-shadow: 2px 3px black;
 }
-
+/*Le damos estilo a las opciones que están dentro del select*/
 option{
   color: white;
   text-shadow: 2px 3px black;
@@ -121,7 +118,6 @@ button{
 #restart{
     width: 74%;
   }
-
 /*Todas estas columnas deben estar flotando hacia la izquierda y tener un relleno de 15px */
 [class*="col-"] {
     float: left;
@@ -134,19 +130,21 @@ button{
     display: table;
 }
 /*Para los teléfonos celulares*/
-
 [class*="col-"] {
     width: 100%;
 }
 /*Para las tablets*/
 @media only screen and (min-width: 600px) {
+  /*Para las tablets se disminuye el ancho del botón volver a ingresar mensaje de 74 a 50 y también el padding*/
   #restart{
-      width: 40%;
+      width: 50%;
       padding: 10px;
   }
+  /*Para las tablets se aumenta el ancho del botón de 80 a 100, el padding se disminuye y el tamaño de letra también*/
   button{
       width: 100%;
       padding: 13px;
+      font-size: 0.7em;
   }
   body {
 background-image:url('imagenes/fondoamor5.jpg');
@@ -172,7 +170,6 @@ text-align: center;
 /*Para el escritorio*/
 @media only screen and (min-width: 768px) {
   button{
-
       width: 100%;
   }
   h1{font-size: 300%;
