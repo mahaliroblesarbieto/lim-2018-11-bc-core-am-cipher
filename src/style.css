@@ -4,6 +4,14 @@ header {
     padding: 10px;
     font-weight: bolder;
     text-shadow: 1.5px 2.5px black;
+    text-align: center;
+  }
+
+  section{
+    text-align: center;
+  }
+  footer{
+    text-align: center;
   }
 /*Le damos estilo a los iconos que estan dentro de header, en este caso solo se esta aumentando el tamaño*/
 #i2{
