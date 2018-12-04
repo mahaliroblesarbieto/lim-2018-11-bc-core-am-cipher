@@ -31,44 +31,35 @@ body{
 * {
     box-sizing: border-box;
 }
+
+.styletextarea{
+  font-size: 1.3em;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bolder;
+  text-align:center;
+  font-style: italic;
+  border-radius: 5px;
+  border: 3px solid black;
+  margin: auto auto;
+  padding: 8px 4px 8px 4px;
+  height: 50px;
+  line-height: 20px;
+
+}
 textarea {
     display: block;
-    font-size: 1.3em;
-    margin: auto auto;
-    padding: 8px 4px 8px 4px;
-    border-radius: 5px;
-    box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);
-    border: 1px solid #666;
     opacity: 0.5;
-    /******/
-    border: solid black;
+    box-shadow: inset 0 1px 2px rgba(0,0,0, .55), 0px 1px 1px rgba(255,255,255,.5);
     width:80%;
-    text-align:center;
-    font-style: italic;
-    height: 50px;
-    line-height: 20px;
-    font-family: 'Indie Flower', cursive;
-    font-weight: bolder;
 }
-
 textarea:hover,
 textarea:focus {
     opacity: .7;
-    color:#000;
-    font-weight: bolder;
-    border: 1px solid #08c;
     box-shadow: 0px 1px 0px rgba(255,255,255,.25),inset 0px 3px 6px rgba(0,0,0,.25);
-    /*******/
-    border: solid black;
     width:90%;
-    text-align:center;
-    font-style: italic;
-    height: 50px;
-    line-height: 20px;
-     font-family: 'Indie Flower', cursive;
-     font-size: 1.3em;
+    color:#000;
 }
-#secret-code{
+select{
     background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
     height: 34px;
     width: 300px;
@@ -88,7 +79,7 @@ button{
     -moz-box-shadow: 4px 4px 0 		#4B0082;
     -webkit-box-shadow: 4px 4px 0 #4B0082;
 }
-#restart{
+.restart{
     width: 74%;
   }
 /*Todas estas columnas deben estar flotando hacia la izquierda y tener un relleno de 15px */
@@ -108,7 +99,7 @@ button{
 }
 /*Para las tablets*/
 @media only screen and (min-width: 600px) {
-  #restart{
+  .restart{
       width: 50%;
   }
   button{
@@ -142,7 +133,7 @@ background-size: 100% 175%;
   }
   h2{font-size: 150%;
   }
-  #restart{
+  .restart{
       width: 30%;
   }
   body {
