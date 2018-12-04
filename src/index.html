@@ -5,94 +5,92 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link href="style.css" rel="stylesheet" type="text/css"/>
-		<link rel="shortcut icon" type="image/png" href="imagenes/favicon.jpg"/>
-		<title>LOVESECRET</title>
+        <link rel="shortcut icon" type="image/png" href="imagenes/favicon.jpg"/>
+        <title>LOVESECRET</title>
     </head>
     <body>
-        <header>
-              <!-- fila 1-->
-          <div class="row" id="title">
-                 <i class="fas fa-heart"></i>
+        <header class="text">
+            <!-- fila 1-->
+            <div class="row" id="title">
+                <i class="fas fa-heart"></i>
                 <h1>LOVESECRET</h1>
                 <i class="fas fa-heart"></i>
-        </div>
-              <!-- fila 2-->
-          <div class="row">
-            <h2>Envía mensajes ocultos o descubre el mensaje de tu pareja</h2>
-          </div>
+            </div>
+            <!-- fila 2-->
+            <div class="row">
+                <h2>Envía mensajes ocultos o descubre el mensaje de tu pareja</h2>
+            </div>
         </header>
-
-      <section>
-        <!-- BLOQUE 1 -->
-        <div class="row">
-            <!-- fila 1-->
-            <div class="col-12 col-s-12">
-                <textarea rows="6" cols="25" id="enter-text" placeholder="INGRESE EL MENSAJE"></textarea>
+        <section class="text">
+            <!-- BLOQUE 1 -->
+            <div class="row">
+                <!-- fila 1-->
+                <div class="col-12 col-s-12">
+                    <textarea rows="6" cols="25" id="enter-text" placeholder="INGRESE EL MENSAJE"></textarea>
+                </div>
             </div>
-        </div>
-        <!-- BLOQUE 2 -->
-        <div class="row">
-            <!-- fila 1-->
-            <div class="col-12 col-s-12 ">
-                <select id="secret-code" name="secret-code">
-                  <option>SELECCIONE LA CLAVE SECRETA</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                </select>
+            <!-- BLOQUE 2 -->
+            <div class="row">
+                <!-- fila 1-->
+                <div class="col-12 col-s-12 ">
+                    <select class="text border" id="secret-code" name="secret-code">
+                        <option>SELECCIONE LA CLAVE SECRETA</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <!-- BLOQUE 3 -->
-        <div class="row">
-            <!-- columna 1-->
-            <div class="col-3 col-s-2 no" ></div>
-            <!-- columna 2-->
-            <div class="col-3 col-s-4 no">
-                <button type="button" id="button-cipher">Ocultar el mensaje &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-lock"></i> </button>
+            <!-- BLOQUE 3 -->
+            <div class="row">
+                <!-- columna 1-->
+                <div class="col-3 col-s-2 no" ></div>
+                <!-- columna 2-->
+                <div class="col-3 col-s-4 no">
+                    <button class="text border" type="button" id="button-cipher">Ocultar el mensaje &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-lock"></i> </button>
+                </div>
+                <!-- columna 3-->
+                <div class="col-3 col-s-4 no">
+                    <button class="text border" type="button" id="button-descipher">Descubrir el mensaje &nbsp;&nbsp;&nbsp; <i class="fas fa-unlock"></i> </button>
+                </div>
+                <!-- columna 4-->
+                <div class="col-3 col-s-2 no"></div>
             </div>
-            <!-- columna 3-->
-            <div class="col-3 col-s-4 no">
-                <button type="button" id="button-descipher">Descubrir el mensaje &nbsp;&nbsp;&nbsp; <i class="fas fa-unlock"></i> </button>
+            <!-- BLOQUE 4 -->
+            <div class="row">
+                <!-- fila 1-->
+                <div class="col-12 col-s-12">
+                    <textarea rows="6" cols="25" id="cipher-and-descipher-text" placeholder="MIRA EL MENSAJE AQUÍ"></textarea>
+                </div>
             </div>
-            <!-- columna 4-->
-            <div class="col-3 col-s-2 no"></div>
-        </div>
-
-        <!-- BLOQUE 4 -->
-        <div class="row">
-            <!-- fila 1-->
-            <div class="col-12 col-s-12">
-                <textarea rows="6" cols="25" id="cipher-and-descipher-text" placeholder="MIRA EL MENSAJE AQUÍ"></textarea>
-            </div>
-        </div>
-        <br>
-      </section>
-            <footer>
-                <button type="button" id="restart">Volver a escribir el mensaje  &nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i> </button>
-            </footer>
-		<script src="cipher.js"></script>
-		<script src="index.js"></script>
+            <br>
+        </section>
+        <footer class="text">
+            <button class="text border" type="button" id="restart">Volver a escribir el mensaje  &nbsp;&nbsp;&nbsp;<i class="fas fa-redo-alt"></i> </button>
+        </footer>
+        <script src="cipher.js"></script>
+        <script src="index.js"></script>
     </body>
 </html>

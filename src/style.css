@@ -1,57 +1,36 @@
 /*Agregamos estilo de letra en CSS*/
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Kaushan+Script');
-/*Le damos estilo al encabezado */
-header {
+  .text{
+    text-align: center;
     color: white;
-    padding: 10px;
     font-weight: bolder;
     text-shadow: 1.5px 2.5px black;
-    text-align: center;
+    font-family: 'Indie Flower', cursive;
   }
-/*Centramos los elementos dentro de la etiqueta section*/
-  section{
-    text-align: center;
+  .border{
+    border: 2px solid #663399;
+    border-radius: 5px;
   }
-/*Centramos los elementos dentro de la etiqueta footer*/
-  footer{
-    text-align: center;
-  }
-/*Le damos estilo a los iconos que estan dentro de header, en este caso solo se esta aumentando el tamaño*/
-#i2{
-    font-size:1em;
-}
-#i1{
-  font-size: 1em;
-}
-/*Le damos estilo a la etiqueta h1*/
 h1{
     font-family: 'Kaushan Script', cursive;
-    text-align: center;
     font-size:3.3em;
-    font-weight: bolder;
     margin: 0;
     padding:0;
 }
-/*Le damos estilo a la etiqueta h2 */
 h2{font-size: 1.3em;
-   margin-top: 0px;
-   padding-top: 0px;
-   font-family: 'Indie Flower', cursive;
+   margin-top:0;
+   padding-top:0;
 }
-/*Le damos estilo al body */
 body{
   background-color: #483D8B;
   background-image:url('imagenes/fondoamor5p.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  font-family: 'Indie Flower', cursive;
 }
 /*Nos aseguramos que el relleno y el borde se incluyan en el ancho y la altura totales de los elementos en todos los div de la pagina */
 * {
     box-sizing: border-box;
 }
-
-/*Vamos a darle estilo al textarea*/
 textarea {
     display: block;
     font-size: 1.3em;
@@ -89,43 +68,26 @@ textarea:focus {
      font-family: 'Indie Flower', cursive;
      font-size: 1.3em;
 }
-/*Le damos estilo al select en donde el usuario escoge el código secreto*/
 #secret-code{
     background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
     height: 34px;
     width: 300px;
     font-size: 1em;
-    font-weight: bolder;
     margin: 10px auto;
-    color: white;
-    border: 2px solid #663399;
-    border-radius: 5px;
-    font-family: 'Indie Flower', cursive;
-    text-shadow: 2px 3px black;
 }
 /*Le damos estilo a las opciones que están dentro del select*/
 option{
   color: white;
-  text-shadow: 2px 3px black;
   background-color:#663399;
-  text-align: center;
 }
-/*Le damos estilo a los botones ocultar mensaje y descubrir mensaje*/
 button{
     background-color: #663399;
     padding: 15px;
     width: 80%;
-    border: 2px #663399;
-    font-family: 'Indie Flower', cursive;
-    color: white;
-    border-radius: 5px;
     font-size: 1em;
-    font-weight: bolder;
-    text-shadow: 1.5px 2.5px black;
     -moz-box-shadow: 4px 4px 0 		#4B0082;
--webkit-box-shadow: 4px 4px 0 		#4B0082;
+    -webkit-box-shadow: 4px 4px 0 #4B0082;
 }
-/*Le damos estilo al botón volver a ingresar mensaje*/
 #restart{
     width: 74%;
   }
@@ -146,24 +108,16 @@ button{
 }
 /*Para las tablets*/
 @media only screen and (min-width: 600px) {
-  /*Para las tablets se disminuye el ancho del botón volver a ingresar mensaje de 74 a 50 y también el padding*/
   #restart{
       width: 50%;
-      padding: 10px;
   }
-  /*Para las tablets se aumenta el ancho del botón de 80 a 100, el padding se disminuye y el tamaño de letra también*/
   button{
       width: 100%;
-      padding: 13px;
       font-size: 0.7em;
   }
   body {
 background-image:url('imagenes/fondoamor5.jpg');
-background-position: center;
-background-repeat: no-repeat;
 background-size: 100% 175%;
-color: white;
-text-align: center;
   }
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -185,37 +139,16 @@ text-align: center;
       font-size: 1em;
   }
   h1{font-size: 300%;
-     font-weight: bolder;
-     margin-top: 1px;
-     margin-bottom: 1px;
-     padding-bottom: 1px;
   }
-  /*Le damos estilo a la etiqueta h2*/
   h2{font-size: 150%;
-     font-weight: bolder;
-     margin-top: 0px;
-     padding-top: 0px;
   }
-
   #restart{
-      background-color: #663399;
-      padding: 10px;
       width: 30%;
-      border: 2px #663399;
-      color: white;
-      font-weight: bolder;
-      border-radius: 5px;
   }
-
   body {
 background-image:url('imagenes/fondoamor5.jpg');
-background-position: center;
 background-size: 100% 200%;
-color: white;
-text-align: center;
-
   }
-
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
